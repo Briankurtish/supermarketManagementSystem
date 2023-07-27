@@ -24,7 +24,26 @@
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="397.0" prefHeight="533.0" prefWidth="391.0" styleClass="right-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane layoutX="397.0" prefHeight="533.0" prefWidth="391.0" styleClass="right-form" stylesheets="@loginDesign.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView glyphName="USER" layoutX="162.0" layoutY="151.0" size="7em" />
+                  <Label layoutX="93.0" layoutY="163.0" text="Employee Sign In" textFill="#007dab">
+                     <font>
+                        <Font name="Palatino Linotype" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="82.0" layoutY="237.0" prefHeight="30.0" prefWidth="220.0" promptText="Employee ID" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <PasswordField layoutX="83.0" layoutY="285.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <Button layoutX="137.0" layoutY="356.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
+                  <Hyperlink layoutX="119.0" layoutY="482.0" stylesheets="@loginDesign.css" text="Login Admin Account?" />
+                  <Button layoutX="317.0" layoutY="8.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="60.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CLOSE" size="1.5em" text="" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="408.0" layoutY="10.0" prefHeight="533.0" prefWidth="391.0" styleClass="right-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="398.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
                   <FontAwesomeIconView glyphName="USER" layoutX="162.0" layoutY="151.0" size="7em" />
                   <Label layoutX="111.0" layoutY="163.0" text="Admin Sign In" textFill="#007dab">
