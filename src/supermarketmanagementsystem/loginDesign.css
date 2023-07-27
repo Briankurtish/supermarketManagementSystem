@@ -23,12 +23,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     -fx-backgroung-color: linear-gradient(to bottom, #eee, #ddd);
     -fx-background-radius: 8px;
     -fx-border-color: #000;
-    -fx-border-width: .4px .4px .4px 0px;
+    -fx-border-width: 0px 0px .8px 0px;
     -fx-font-family: "Tahoma";
     -fx-font-size: 13px;
+    -fx-border-radius: 8px;
 }
 
 .textfield:focused{
-    -fx-backgroung-color: #fff;
+    -fx-backgroung-color: #efefef;
     -fx-border-width: 0px 0px 1.8px 0px;
+}
+
+.login-btn{
+    -fx-background-color: linear-gradient(to bottom, #2365a7, #213c57);
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Arial";
+    -fx-font-size: 13px;
+    
 }
