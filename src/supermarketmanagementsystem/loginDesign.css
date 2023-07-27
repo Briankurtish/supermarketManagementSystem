@@ -12,3 +12,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     -fx-border-color: #000;
     -fx-border-width: .4px 0px .4px .4px; /*Top Right Bottom Left*/
 }
+
+.right-form{
+    -fx-backgroung-color: #fff;
+    -fx-border-color: #000;
+    -fx-border-width: .4px .4px .4px 0px;
+}
