@@ -18,3 +18,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     -fx-border-color: #000;
     -fx-border-width: .4px .4px .4px 0px;
 }
+
+.textfield{
+    -fx-backgroung-color: linear-gradient(to bottom, #eee, #ddd);
+    -fx-background-radius: 8px;
+    -fx-border-color: #000;
+    -fx-border-width: .4px .4px .4px 0px;
+    -fx-font-family: "Tahoma";
+    -fx-font-size: 13px;
+}
+
+.textfield:focused{
+    -fx-backgroung-color: #fff;
+    -fx-border-width: 0px 0px 1.8px 0px;
+}
