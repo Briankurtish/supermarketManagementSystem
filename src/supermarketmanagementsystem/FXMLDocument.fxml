@@ -36,7 +36,7 @@
                   <PasswordField layoutX="83.0" layoutY="285.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@loginDesign.css" />
                   <Button layoutX="137.0" layoutY="356.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
                   <Hyperlink layoutX="119.0" layoutY="482.0" text="Login Employee Account?" />
-                  <Button layoutX="317.0" layoutY="8.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="60.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
+                  <Button layoutX="317.0" layoutY="8.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="60.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
                      <graphic>
                         <FontAwesomeIconView glyphName="CLOSE" size="1.5em" text="" />
                      </graphic>
