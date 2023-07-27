@@ -43,3 +43,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     -fx-font-size: 13px;
     
 }
+
+.login-btn:hover{
+    -fx-background-color: linear-gradient(to bottom, #3d85cc, #295986);
+}
