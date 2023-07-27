@@ -56,3 +56,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 .close:hover{
     -fx-background-color: #dd2f4f;
 }
+
+.hyperlink{
+    -fx-border-color: transparent;
+    -fx-font-family: "Tahoma";
+    -fx-font-size: 12px;
+    -fx-text-fill: #369eda;
+}
+
+.hyperlink:hover{
+    -fx-text-fill: #000
+}
