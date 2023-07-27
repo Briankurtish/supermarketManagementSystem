@@ -12,7 +12,7 @@
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
          <children>
             <AnchorPane prefHeight="533.0" prefWidth="397.0" styleClass="left-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
@@ -24,7 +24,7 @@
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="397.0" prefHeight="533.0" prefWidth="391.0" styleClass="right-form" stylesheets="@loginDesign.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane fx:id="employee_form" layoutX="397.0" prefHeight="533.0" prefWidth="391.0" styleClass="right-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
                   <FontAwesomeIconView glyphName="USER" layoutX="162.0" layoutY="151.0" size="7em" />
                   <Label layoutX="93.0" layoutY="163.0" text="Employee Sign In" textFill="#007dab">
@@ -32,10 +32,10 @@
                         <Font name="Palatino Linotype" size="25.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="82.0" layoutY="237.0" prefHeight="30.0" prefWidth="220.0" promptText="Employee ID" styleClass="textfield" stylesheets="@loginDesign.css" />
-                  <PasswordField layoutX="83.0" layoutY="285.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@loginDesign.css" />
-                  <Button layoutX="137.0" layoutY="356.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
-                  <Hyperlink layoutX="119.0" layoutY="482.0" stylesheets="@loginDesign.css" text="Login Admin Account?" />
+                  <TextField fx:id="employee_id" layoutX="82.0" layoutY="237.0" prefHeight="30.0" prefWidth="220.0" promptText="Employee ID" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <PasswordField fx:id="employee_password" layoutX="83.0" layoutY="285.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <Button fx:id="employee_loginBtn" layoutX="137.0" layoutY="356.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
+                  <Hyperlink fx:id="employee_hyperLink" layoutX="133.0" layoutY="483.0" stylesheets="@loginDesign.css" text="Login Admin Account?" />
                   <Button layoutX="317.0" layoutY="8.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="60.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
                      <graphic>
                         <FontAwesomeIconView glyphName="CLOSE" size="1.5em" text="" />
@@ -43,7 +43,7 @@
                   </Button>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="408.0" layoutY="10.0" prefHeight="533.0" prefWidth="391.0" styleClass="right-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="398.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane fx:id="admin_form" layoutX="408.0" layoutY="10.0" prefHeight="533.0" prefWidth="391.0" styleClass="right-form" stylesheets="@loginDesign.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="398.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
                   <FontAwesomeIconView glyphName="USER" layoutX="162.0" layoutY="151.0" size="7em" />
                   <Label layoutX="111.0" layoutY="163.0" text="Admin Sign In" textFill="#007dab">
@@ -51,10 +51,10 @@
                         <Font name="Palatino Linotype" size="25.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="82.0" layoutY="237.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@loginDesign.css" />
-                  <PasswordField layoutX="83.0" layoutY="285.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@loginDesign.css" />
-                  <Button layoutX="137.0" layoutY="356.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
-                  <Hyperlink layoutX="119.0" layoutY="482.0" stylesheets="@loginDesign.css" text="Login Employee Account?" />
+                  <TextField fx:id="admin_username" layoutX="82.0" layoutY="237.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <PasswordField fx:id="admin_password" layoutX="83.0" layoutY="285.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <Button fx:id="admin_loginBtn" layoutX="137.0" layoutY="356.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="112.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
+                  <Hyperlink fx:id="admin_hyperLink" layoutX="119.0" layoutY="482.0" stylesheets="@loginDesign.css" text="Login Employee Account?" />
                   <Button layoutX="317.0" layoutY="8.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="60.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
                      <graphic>
                         <FontAwesomeIconView glyphName="CLOSE" size="1.5em" text="" />
